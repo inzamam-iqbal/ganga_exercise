@@ -17,4 +17,4 @@ RUN pip install ganga PyPDF2 textract
 COPY . .
 
 #run ganga job
-CMD sh ./start.sh
+CMD yes | ganga gangaJob.py
