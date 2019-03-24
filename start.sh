@@ -1,0 +1,1 @@
+ganga -i gangaJob.py
