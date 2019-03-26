@@ -14,7 +14,7 @@ flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig zlib1g-dev libpulse
 #install PyPDF2 and textract for splitting the pdf and reading pdf
 RUN pip install ganga PyPDF2 textract
 
-# copy the current local directory to WORKDIR in docker container
+#fetch the necessary files from github
 RUN git clone https://github.com/inzamam-iqbal/ganga_exercise.git
 
 #run start.sh file on start of the container
