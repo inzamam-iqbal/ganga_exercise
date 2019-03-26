@@ -74,14 +74,14 @@ the word "the" using regex.
 ## Exercise two
 ### Running the docker container directly
 ```
-sudo docker run inzamamiqbal/ganga_exercise:1.0
+sudo docker run inzamamiqbal/ganga_exercise:1.1
 ```
 ### Running the docker container using ganga Job
 ```shell
 ganga runDockerJob.py <docker image name> <sudo password>
 
 #To run the container created for exercise 2
-ganga runDockerJob.py inzamamiqbal/ganga_exercise:1.0 <sudo password>
+ganga runDockerJob.py inzamamiqbal/ganga_exercise:1.1 <sudo password>
 ```
 
 ### Files related to exercise 2
