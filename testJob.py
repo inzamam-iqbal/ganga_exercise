@@ -14,7 +14,7 @@ def getCount():
 	count=0
 	try:
 		text = textract.process("CERN.pdf")
-		count = len(list(re.finditer(r"\bthe\b", text)))
+		count = len(list(re.finditer(r"(\bthe\b)|(\bThe\b)", text)))
 	except EnvironmentError:
 		print 'Error opening file {0}'.format("CERN.pdf")
 	return count

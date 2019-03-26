@@ -14,7 +14,7 @@ filePath = args[1]
 count=0
 try:
 	text = textract.process(filePath)#extract the text from pdf
-	count = len(list(re.finditer(r"\bthe\b", text)))#count the word 'the'
+	count = len(list(re.finditer(r"(\bthe\b)|(\bThe\b)", text)))#count the word 'the' and 'The'
 except EnvironmentError:
 	print 'Error opening file {0}'.format(filePath)
 outFile=open('answer.txt','w')
