@@ -31,5 +31,3 @@ j.splitter=ArgSplitter(args=args)
 j.outputfiles = [ LocalFile('answer.txt') ]
 j.postprocessors=CustomMerger(files=['answer.txt'],module=File('intAdderMerger.py'))
 j.submit()
-while (j.status != 'completed'):
-	pass

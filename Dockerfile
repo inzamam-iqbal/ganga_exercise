@@ -18,4 +18,4 @@ RUN pip install ganga PyPDF2 textract
 RUN git clone https://github.com/inzamam-iqbal/ganga_exercise.git
 
 #run start.sh file on start of the container
-CMD cd ganga_exercise/ && bash ./start.sh
+#CMD cd ganga_exercise/ && bash ./start.sh
